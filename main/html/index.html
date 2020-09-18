@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>단어장 웹 제작</title>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body onload="init()">
+    <div id="wrap">
+
+      <div id="header">
+        <div class="container">
+          <p class="title">단어장 웹사이트다</p>
+        </div>
+      </div>
+
+      <div id="contents">
+        <div class="container">
+          <div class="bookmark_area">
+            <p class="title">북마크</p>
+          </div>
+          <div class="word_area">
+            <p class="title">단어</p>
+            <ul class="list">
+
+            </ul>
+            <div class="button">
+              <input type="text" placeholder="추가할 단어 입력" id="add_word">
+              <input type="text" placeholder="단어 설명 입력" id="add_sup">
+              <input type="button" value="추가" onclick="set_word(this.value)">
+            </div>
+            <div class="page_button_area">
+              <ul class="page_list">
+                <li><button type="button" class="prev_page_button">◀</button></li>
+                <li class="next_page_button_li"><button type="button" class="next_page_button">▶</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="container">
+          <p class="making">제작자 : 빈재홍</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  </body>
+</html>
